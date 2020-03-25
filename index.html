@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>three.js習熟</title>
+    </head>
+    <body>
+        <div id="main">
+            <ul>
+            </ul>
+        </div>
+    </body>
+    <script language="JScript">
+        const div =  document.getElementById("main")
+        const ul = div.firstElementChild
+        for(let i=0; i<6; i++){
+            let li = ul.appendChild(document.createElement('li'))
+            let a = li.appendChild(document.createElement('a'))
+            a.href = "./1-" + Number(i+1) + ".html"
+            a.textContent = "1-" + Number(i+1)
+        }
+    </script>
+</html>
