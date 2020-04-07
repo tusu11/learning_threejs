@@ -3,13 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <title>three.js習熟</title>
+        <script src="./node_modules/three/build/three.js"></script>
+        <script src="./index.js"></script>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            div#canvas-frame{
+                width: 512px;
+                height: 512px;
+            }
+        </style>
     </head>
     <body>
         <div id="main">
             <ul>
             </ul>
         </div>
+        <div id="canvas-frame"></div>
     </body>
+    <!--
     <script language="JScript">
         const div =  document.getElementById("main")
         const ul = div.firstElementChild
@@ -20,4 +34,5 @@
             a.textContent = "1-" + Number(i+1)
         }
     </script>
+    -->
 </html>
